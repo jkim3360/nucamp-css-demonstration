@@ -1,0 +1,55 @@
+/* Try commenting and uncommenting CSS properties below 
+to experiment with different styles! Feel free to add your own. 
+Avoid conflicting styles by commenting out or deleting duplicate styles.*/
+
+.black-container {
+    /* display: inline; */
+    color: white;
+    /* height: 20vh; */
+    /* width: 50vw; */
+  
+    /* MARGIN */
+    margin: 10px 20px;
+    
+
+    /* BORDER */
+    border: 2px red solid;
+    
+    /* BACKGROUND */
+    background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.denofgeek.com%2Fwp-content%2Fuploads%2F2020%2F09%2Frobert-pattinson-the-batman-warner-bros.jpg%3Ffit%3D1200%252C680&f=1&nofb=1");
+    background-size: cover;
+    height: 500px;
+    /* background-color: green; */
+    /* background-color: rgba(0,0,0,.1); */
+}
+
+/* PSEUDO CLASS */
+.black-container:active {
+    color: rgb(255,0,0);
+}
+
+.child:hover {
+    color: orange;
+}
+
+/* STYLES */
+
+.text {
+    font-size: 12px;
+    font-family: arial;
+}
+
+.text-2 {
+    font-size: 24px;
+    font-family: arial;
+}
+
+h1 {
+    color: pink;
+}
+
+.child {
+    color: green;
+    border: 1px solid blue;
+}
+

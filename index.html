@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .survey-form {
+            color: red;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+</head>
+
+<body>
+    <h1 style="color: black;">For Demonstration</h1>
+    <h1>Hello class</h1>
+    <form action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method="post"
+        enctype="multipart/form-data">
+        <label for="fname">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" name="password" placeholder="Enter password"><br><br>
+        <label for="text">Text:</label><br>
+        <input type="text" name="text" placeholder="Text"><br><br>
+        <label for=" file">File To Submit:</label><br>
+        <input type="file" name="file"><br><br>
+        <input type="submit" value="Submit">
+
+        <!-- MONTH AND COLOR -->
+        <input type="month">
+        <input type="color">
+    </form>
+
+    <!-- FIELDSET, LEGEND EXAMPLES -->
+    <form action="/action_page.php">
+        <fieldset>
+            <legend>Peronal Information:</legend>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday"><br><br>
+            <textarea></textarea><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <!-- CODEPEN EXAMPLE -->
+    <h1>Code Challenge: Fix This Form</h1>
+    <section>
+        <form action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method="post">
+            <div>
+                <label for="travel">Preferred method of travel:</label>
+                <select id="travel" name="travel_method" required>
+                    <option disabled selected value="">Choose ... </option>
+                    <option value="bike">Bike</option>
+                    <option value="car">Car</option>
+                    <option value="train">Train</option>
+                </select>
+            </div>
+            <div>
+                Travel Budget:
+                <input type="radio" id="frugal" name="budget" value="frugal" required />
+                <label>Frugal</label>
+                <input type="radio" id="moderate" name="budget" value="moderate" />
+                <label>Moderate</label>
+                <input type="radio" id="luxury" name="budget" value="luxury">
+                <label>Luxury</label>
+            </div>
+            <div>
+                <input type="submit" value="Go!" />
+            </div>
+        </form>
+    </section>
+
+    <!-- CSS EXAMPLES -->
+    <h1>Title</h1>
+    <div class="parent black-container text text-2">
+        Click me to see the pseudo class :active in action!
+        <div class="child">
+            I am a child div.
+        </div>
+    </div>
+
+    <div class="parent-2 black-container text text-2">
+        This is another container.
+        <div class="child">
+            I am a child div.
+        </div>
+
+    </div>
+
+    <div class="parent-2 black-container text text-2">
+        This is a third container
+        <div class="child">
+            I am a child div. Hover to see the pseudo class :hover in action!
+        </div>
+    </div>
+</body>
+
+</html>
